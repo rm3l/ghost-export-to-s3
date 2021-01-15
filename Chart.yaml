@@ -1,6 +1,6 @@
 apiVersion: v2
-name: ghost-export-to-s3-chart
-description: A Helm chart for Kubernetes
+name: ghost-export-to-s3
+description: Helm Chart for backing up a headless Ghost Blog to AWS S3
 
 # A chart can be either an 'application' or a 'library' chart.
 #
