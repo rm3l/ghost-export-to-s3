@@ -3,17 +3,24 @@
 # Declare variables to be passed into your templates.
 
 ghost:
+  # -- Base URL for the headless Ghost CMS targeted
   apiBaseUrl: "https://my.ghost.blog/ghost"
+  # -- Ghost CMS username
   username: "my-ghost-username"
+  # -- Ghost CMS password
   password: "my-ghost-password"
 
 aws:
+  # -- AWS Access Key. Must have the permissions to write to the target bucket.
   accessKeyId: "my-aws-access-key-id"
+  # -- AWS Secret Key. Must have the permissions to write to the target bucket.
   secretKey: "my-aws-secret-key"
+  # -- Target destination (absolute) in AWS S3, where the backup file should be written
   s3:
     destination: "s3://path/to/my/s3-export.json"
 
-cronJob:    
+cronJob:
+  # -- How frequently the Backup job should run. Cron Syntax, as supported by Kubernetes CronJobs
   schedule: "@daily"
   concurrencyPolicy: Forbid
   restartPolicy: OnFailure
@@ -34,9 +41,9 @@ nameOverride: ""
 fullnameOverride: ""
 
 serviceAccount:
-  # Specifies whether a service account should be created
+  # -- Specifies whether a service account should be created
   create: true
-  # Annotations to add to the service account
+  # -- Annotations to add to the service account
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
