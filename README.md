@@ -1,5 +1,4 @@
-# ARCHIVED #
-Moved to https://github.com/rm3l/helm-charts/tree/main/charts/ghost-export-to-s3
+**ARCHIVED : Moved to https://github.com/rm3l/helm-charts/tree/main/charts/ghost-export-to-s3 **
 
 # ghost-export-to-s3
 
