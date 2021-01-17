@@ -1,3 +1,6 @@
+# ARCHIVED #
+Moved to https://github.com/rm3l/helm-charts/tree/main/charts/ghost-export-to-s3
+
 # ghost-export-to-s3
 
 Helm Chart for backing up a headless Ghost Blog to AWS S3
